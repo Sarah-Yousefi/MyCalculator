@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="operatorColor">#506C2D</color>
+    <color name="backGround">#100101</color>
+    <color name="clearBotton">#CA7266</color>
+    <color name="operationColor">#4D575157</color>
+    <color name="operantColor">#282E2F</color>
 </resources>
