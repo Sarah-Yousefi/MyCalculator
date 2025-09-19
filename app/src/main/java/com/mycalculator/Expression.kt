@@ -5,7 +5,7 @@ import java.util.Stack
 
 class Expression(var infixExpress: MutableList<String>) {
     private fun infixToPostfix(): String {
-        var result: String = ""
+        var result = ""
         val stack = Stack<String>()
         for (element in infixExpress){
             if (element.all { it.isDigit() } || element.any { it == '.' }) {
@@ -42,11 +42,11 @@ class Expression(var infixExpress: MutableList<String>) {
     }
 
 
-    fun evaluateExpression(postFix: String): number {
+    fun evaluateExpression(postFix: String): Number {
         val stack= Stack <Double>()
         var i=0
-        while (i< postFix.lenght){
-            if (postFix(i)==' '){
+        while (i< postFix.length){
+            if (postFix[i]==' '){
                 i++
                 continue
             }
@@ -71,7 +71,6 @@ class Expression(var infixExpress: MutableList<String>) {
             i++
         }
         return (if (stack.peek()/stack.peek().toInt()==1.0) stack.peek().toInt() else stack.peek())
-        }
 
     }
 }
